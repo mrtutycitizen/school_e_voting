@@ -4,7 +4,7 @@ from datetime import datetime
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="manju@2110",
+    password="1234",
     database="election_db"
 )
 cursor = db.cursor()
@@ -123,3 +123,4 @@ def main():
             break
 
 main()
+
