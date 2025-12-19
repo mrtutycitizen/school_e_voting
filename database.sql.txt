@@ -1,0 +1,42 @@
+CREATE DATABASE election_db;
+
+USE election_db;
+
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    class VARCHAR(10),
+    division CHAR(1),
+    dob DATE
+);
+
+CREATE TABLE teachers (
+    teacher_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    department VARCHAR(50),
+    dob DATE
+);
+
+INSERT INTO students VALUES
+(1, 'Arul', 'XII', 'A', '2006-02-14'),
+(2, 'Meena', 'XI', 'B', '2007-06-21'),
+(3, 'Kavin', 'XII', 'C', '2005-03-11'),
+(4, 'Revathi', 'X', 'A', '2009-07-02'),
+(5, 'Dinesh', 'XII', 'B', '2006-11-30'),
+(6, 'Priya', 'XI', 'C', '2007-12-17'),
+(7, 'Sangeetha', 'XII', 'A', '2005-01-09'),
+(8, 'Murugan', 'XI', 'A', '2007-05-28'),
+(9, 'Kala', 'X', 'B', '2010-04-15'),
+(10, 'Ravi', 'XII', 'C', '2005-09-23');
+
+INSERT INTO teachers VALUES
+(101, 'Devan', 'Mathematics', '1962-05-14'),
+(102, 'Sundari', 'English', '1970-10-20'),
+(103, 'Rajesh', 'Physics', '1981-12-07'),
+(104, 'Meenakshi', 'Chemistry', '1959-03-19'),
+(105, 'Arun', 'Computer Science', '1985-06-15'),
+(106, 'Revathi', 'History', '1961-11-25'),
+(107, 'Priyadarshini', 'Biology', '1975-02-12'),
+(108, 'Gopal', 'Economics', '1963-07-08'),
+(109, 'Kalaivani', 'Commerce', '1972-09-19'),
+(110, 'Murali', 'Tamil', '1958-12-01');
